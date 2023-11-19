@@ -22,7 +22,8 @@ SOURCES = ft_isalpha.c ft_isdigit.c ft_memchr.c ft_strchr.c ft_strncmp.c \
 
 
 SOURCES_BONUS = ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c \
-			ft_lstlast_bonus.c ft_lstadd_back_bonus.c
+			ft_lstlast_bonus.c ft_lstadd_back_bonus.c ft_lstdelone_bonus.c \
+			ft_lstclear_bonus.c ft_lstiter_bonus.c ft_lstmap_bonus.c
 
 HEADER = libft.h
 
@@ -46,8 +47,7 @@ clean:
 	rm -f ${OBJECTS}
 
 fclean:
-	rm -f ${NAME} ${OBJECTS}
-	rm -f bonus
+	rm -f ${NAME} ${OBJECTS} ${OBJECTSBONUS}
 
 re:
 	make fclean
